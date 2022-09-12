@@ -1,0 +1,94 @@
+.container {
+    align-items: center;
+    background-color: beige;
+    border: 2px solid rgb(109, 95, 78);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: auto;
+    padding: 30px 50px 50px 50px;
+    width: 500px;
+}
+.formContainer {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.goBackBtn {
+    background-color: beige;
+    border: 2px solid rgb(109, 95, 78);
+    border-radius: 8px;
+    color: rgb(109, 95, 78);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px;
+    text-decoration: none;
+}
+.goBackBtn:hover {
+    background-color: rgb(109, 95, 78);
+    border: 2px solid beige;
+    color: beige;
+    cursor: pointer;
+}
+.labelInput {
+    font-size: 18px;
+    font-weight: 600;
+}
+.controlsInputT {
+    background-color: rgb(210, 188, 162);
+    border: 2px solid rgb(109, 95, 78);
+    border-radius: 7px;
+    font-size: 17px;
+    padding: 4px;
+}
+.toSelectT {
+    background-color: rgb(210, 188, 162);
+    border: 2px solid rgb(109, 95, 78);
+    border-radius: 7px;
+    font-size: 17px;
+    padding: 2px;
+}
+.tempSelected {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.tempSelectedEl {
+    background-color: rgb(210, 188, 162);
+    border: 2px solid rgb(109, 95, 78);
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 4px;
+    padding: 5px;
+}
+.tempSelectedEl:hover {
+    background-color: rgb(109, 95, 78);
+    border: 2px solid rgb(210, 188, 162);
+    color: beige;
+    cursor: pointer;
+}
+.submitBtn {
+    background-color: rgb(210, 188, 162);
+    border: 2px solid rgb(109, 95, 78);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+}
+.submitBtn:hover {
+    background-color: rgb(109, 95, 78);
+    border: 2px solid rgb(210, 188, 162);
+    color: beige;
+    cursor: pointer;
+}
+
+.errorsP {
+    font-size: 14px;
+    color: rgb(247, 47, 87);
+}

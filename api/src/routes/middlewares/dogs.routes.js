@@ -18,7 +18,7 @@ router.get("/", async (req, res, next) => {
   }
 });
 
-router.get("/:dogId/", async (req, res, next) => {
+router.get("/:dogId", async (req, res, next) => {
   try {
     const { dogId } = req.params;
     const allDogs = await getAllDogs();

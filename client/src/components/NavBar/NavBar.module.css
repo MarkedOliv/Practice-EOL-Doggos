@@ -1,0 +1,33 @@
+.headerContainer {
+    align-items: center;
+    background-color: rgb(210, 188, 162);
+    display: flex;
+    justify-content: space-between;
+}
+.headerContainer img {
+    height: 52px;
+    margin-left: 10px;
+    width: 52px;
+}
+.CreateDog {
+    background-color: beige;
+    border: 2px solid rgb(109, 95, 78);
+    border-radius: 8px;
+    color: rgb(109, 95, 78);
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 4px;
+    padding: 8px;
+}
+.CreateDog:hover {
+    background-color: rgb(109, 95, 78);
+    border: 2px solid beige;
+    color: beige;
+    cursor: pointer;
+}
+.Orders {
+    align-items: center;
+    color: rgb(109, 95, 78);
+    display: flex;
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+.listContainer {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.listContainer li {
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.pagNum {
+    background-color: beige;
+    border: 1px solid rgb(109, 95, 78);
+    border-radius: 4px;
+    color: rgb(109, 95, 78);
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.pagNum:hover {
+    background-color: rgb(109, 95, 78);
+    border: 1px solid beige;
+    color: beige;
+}

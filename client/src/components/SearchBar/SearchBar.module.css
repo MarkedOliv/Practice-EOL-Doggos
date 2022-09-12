@@ -1,0 +1,6 @@
+.SearchBar {
+    border: 2px solid rgb(109, 95, 78);
+    border-radius: 8px;
+    padding: 8px;
+    text-align: start;
+}

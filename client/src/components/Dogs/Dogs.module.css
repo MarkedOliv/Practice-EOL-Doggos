@@ -1,0 +1,11 @@
+.home {
+    display: flex;
+    flex-direction: column;
+}
+.home .dogsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 1200px;
+}

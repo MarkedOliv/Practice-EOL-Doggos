@@ -1,0 +1,99 @@
+.dogDetailContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.goBackBtn {
+    background-color: beige;
+    border: 2px solid rgb(109, 95, 78);
+    border-radius: 8px;
+    color: rgb(109, 95, 78);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px;
+}
+.goBackBtn:hover {
+    background-color: rgb(109, 95, 78);
+    border: 2px solid beige;
+    color: beige;
+    cursor: pointer;
+}
+.dogDetailName {
+    font-size: 30px;
+    font-weight: bold;
+    color: beige;
+    text-shadow: -1px 0 rgb(109, 95, 78), 1px 0 rgb(109, 95, 78), 0 1px rgb(109, 95, 78), 0 -1px rgb(109, 95, 78);
+}
+
+.dogImg {
+    border: 2px solid rgb(109, 95, 78);
+    border-radius: 8px;
+    height: 40%;
+    width: 50%;
+}
+
+.dogHeightContainer {
+    align-items: center;
+    background-color: beige;
+    border-left: 2px solid rgb(109, 95, 78);
+    border-top: 2px solid rgb(109, 95, 78);
+    border-bottom: 2px solid rgb(109, 95, 78);
+    border-radius: 8px 0 0 8px;
+    color: rgb(109, 95, 78);
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-top: 10px;
+    justify-items: center;
+    padding: 15px;
+}
+.dogWeightContainer {
+    align-items: center;
+    background-color: beige;
+    border-top: 2px solid rgb(109, 95, 78);
+    border-bottom: 2px solid rgb(109, 95, 78);
+    color: rgb(109, 95, 78);
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-items: center;
+    margin-top: 10px;
+    padding: 15px;
+}
+.dogLifeSpanContainer {
+    align-items: center;
+    background-color: beige;
+    border-top: 2px solid rgb(109, 95, 78);
+    border-bottom: 2px solid rgb(109, 95, 78);
+    border-right: 2px solid rgb(109, 95, 78);
+    border-radius: 0 8px 8px 0;
+    color: rgb(109, 95, 78);
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-items: center;
+    margin-top: 10px;
+    padding: 15px;
+}
+.dogTemperaments {
+    align-items: center;
+    background-color: beige;
+    border: 2px solid rgb(109, 95, 78);
+    border-radius: 8px;
+    color: rgb(109, 95, 78);
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    justify-items: center;
+    padding: 15px;
+    list-style: none;
+}
+.dogTemperamentsEl {
+    color: rgb(109, 95, 78);
+    padding: 8px;
+}
+.utilContainer {
+    display: flex;
+}

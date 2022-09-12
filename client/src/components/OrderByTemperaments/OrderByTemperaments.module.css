@@ -1,0 +1,11 @@
+.temp {
+    border-radius: 8px 0 0 8px;
+    padding: 4px;
+    
+}
+.selectTemp {
+    background-color: beige;
+    border: 2px solid rgb(109, 95, 78);
+    border-radius: 4px;
+    padding: 3px;
+}
