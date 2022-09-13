@@ -35,7 +35,6 @@ router.get("/:dogId", async (req, res, next) => {
 
 router.post("/", async (req, res, next) => {
   let {name, min_height, max_height, min_weight, max_weight, life_span, temperaments, image} = req.body;
-  console.log(name, min_height, max_height, min_weight, max_weight, life_span, temperaments, image) 
   const fixedHeight = []
   const minHeight = min_height;
   const maxHeight = max_height;
@@ -46,19 +45,22 @@ router.post("/", async (req, res, next) => {
   const maxWeight = max_weight;
   fixedWeight.push(minWeight, maxWeight);
   try {
-  let dog = await Dogs.create({
-    name,
-    height: fixedHeight,
-    weight: fixedWeight,
-    life_span,
-    image: image ? image : "https://i.ytimg.com/vi/VPZJ_l_IHJ0/maxresdefault.jpg",
-  })
-
-  let associatedTemp = await Temperaments.findAll({where: { name: temperaments}})
-
-  dog.addTemperaments(associatedTemp);
-
-  res.status(200).send("Dog created succesfully!")
+    if(!name || !min_height || !max_height || !min_weight || !max_weight) {
+      return res.status(400).json({msg: "Missing data"});
+    } else {
+      let dog = await Dogs.create({
+        name,
+        height: fixedHeight,
+        weight: fixedWeight,
+        life_span,
+        image: image ? image : "https://i.ytimg.com/vi/VPZJ_l_IHJ0/maxresdefault.jpg",
+      })
+  
+      let associatedTemp = await Temperaments.findAll({where: { name: temperaments}})
+      dog.addTemperaments(associatedTemp);
+  
+      res.status(200).send("Dog created succesfully!");
+    }
   } catch (error) {
     next(error);
   }
