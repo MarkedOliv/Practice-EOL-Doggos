@@ -26,7 +26,7 @@ router.get("/:dogId", async (req, res, next) => {
     if (dog.length) {
         res.status(200).json(dog);
     }else{
-        res.status(404).send("Dog no found in the Data");
+        res.status(404).send("Can't find that dog");
     }
   } catch (error) {
     next(error);

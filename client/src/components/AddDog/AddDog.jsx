@@ -118,7 +118,7 @@ export default function AddDog () {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        if(!dog.image || !dog.imagen.includes("http") || dog.imagen.length < 6) {
+        if(!dog.image || !dog.image.includes("http") || dog.image.length < 6) {
             dog.image = img;
         }
         dispatch(createDog(dog));
