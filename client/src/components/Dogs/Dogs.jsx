@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect, useState } from "react";
 import { fetchDogs, fetchTemperaments } from "../../redux/actions";
-import Dog from "../Dog/Dog.jsx";
+import Dog from "../Dog/Dog";
 import Pagination from "../Pagination/Pagination";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
@@ -27,7 +27,7 @@ export default function Dogs () {
     
     return (
     <div className={styles.home}>
-        <NavBar />        
+        <NavBar setCurrentPage={setCurrentPage}/>        
         <div className={styles.dogsContainer}>
             {
                 currentDogs.forEach(dog => {
