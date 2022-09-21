@@ -2,13 +2,17 @@ import { useDispatch } from "react-redux";
 import { sortTemperament } from "../../redux/actions";
 import { useSelector } from "react-redux";
 import { ALL } from "../../utils/sort";
+import { useHistory } from "react-router-dom";
 import styles from "./OrderByTemperaments.module.css";
 
-export default function OrderByTemperaments () {
+export default function OrderByTemperaments ({ setCurrentPage }) {
     let dispatch = useDispatch();
+    let history = useHistory();
     const temperaments = useSelector(state => state.temperaments);
     function onSelectChange(e) {
         dispatch(sortTemperament(e.target.value))
+        setCurrentPage(1);
+        history.push('/dogs/page/1');
     }
     return (
     <div>
