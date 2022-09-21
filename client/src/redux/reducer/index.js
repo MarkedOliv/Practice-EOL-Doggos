@@ -5,7 +5,8 @@ import {
     SORT_NAME,
     SORT_WEIGHT,
     SORT_TEMPERAMENTS,
-    GET_DOG_DETAILS
+    GET_DOG_DETAILS,
+    CLEAR_DOG_DETAILS
     } from "../actions";
 import { ASCENDENTE, MIN } from "../../utils/sort"
 
@@ -141,6 +142,12 @@ export default function reducer (state = initialState, action) {
             return {
                 ...state,
                 dogDetails: details,
+            }
+        }
+        case CLEAR_DOG_DETAILS: {
+            return {
+                ...state,
+                dogDetails: initialState.dogDetails
             }
         }
         default: {

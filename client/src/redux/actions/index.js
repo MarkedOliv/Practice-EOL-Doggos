@@ -6,6 +6,7 @@ export const SORT_NAME = "SORT_NAME";
 export const SORT_WEIGHT = "SORT_WEIGHT";
 export const SORT_TEMPERAMENTS = "SORT_TEMPERAMENTS";
 export const GET_DOG_DETAILS = "GET_DOG_DETAILS";
+export const CLEAR_DOG_DETAILS = "CLEAR_DOG_DETAILS";
 
 export function fetchDogs () {
     return function ( dispatch ) {
@@ -83,6 +84,13 @@ export function getDogDetails(id) {
          catch (error) {
             console.log(error)
         }
+    }
+}
+export function clearDogDetails() {
+    return function (dispatch) {
+        return dispatch({
+            type: CLEAR_DOG_DETAILS,
+        })
     }
 }
 export function createDog(dog) {
