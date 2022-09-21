@@ -168,7 +168,7 @@ export default function AddDog () {
             {
                 !errors.name ?null :<p className={styles.errorsP}>{errors.name}</p>
             }
-            <input className={styles.controlsInputT} type="text" name="name" value={dog.name} onChange={(e) => handleChange(e)} />
+            <input className={styles.controlsInputT} type="text" name="name" value={dog.name.trim()} onChange={(e) => handleChange(e)} />
             <label className={styles.labelInput}>Min-Height: </label>
             {
                 !errors.min_height ?null :<p className={styles.errorsP}>{errors.min_height}</p>
