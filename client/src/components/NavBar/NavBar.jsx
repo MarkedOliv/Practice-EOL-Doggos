@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/dog.png';
 import styles from './NavBar.module.css';
 
-export default function NavBar () {
+export default function NavBar ({setCurrentPage}) {
     return (
     <header className={styles.headerContainer}>
         <Link to="/">
@@ -14,9 +14,9 @@ export default function NavBar () {
         </Link>
         <SearchBar className={styles.SearchBar}/>
         <div className={styles.Orders}>
-            <OrderByName />
-            <OrderByWeight />
-            <OrderByTemperaments />
+            <OrderByName setCurrentPage={setCurrentPage}/>
+            <OrderByWeight setCurrentPage={setCurrentPage}/>
+            <OrderByTemperaments setCurrentPage={setCurrentPage}/>
         </div>
         <Link to="/add_dog">
             <button className={styles.CreateDog}>Create Dog</button>

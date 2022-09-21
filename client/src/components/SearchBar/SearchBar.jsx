@@ -17,7 +17,7 @@ export default function SearchBar () {
   const handleOnChange = (e) => {
     setSearch(e.target.value);
     dispatch(searchDogs(search));
-    history.push("/dogs");
+    history.push("/dogs/page/1");
   }
   const handleOnSubmit = (e) => {
     e.preventDefault();
