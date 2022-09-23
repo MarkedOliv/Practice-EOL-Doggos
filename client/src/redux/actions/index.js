@@ -10,7 +10,7 @@ export const CLEAR_DOG_DETAILS = "CLEAR_DOG_DETAILS";
 
 export function fetchDogs () {
     return function ( dispatch ) {
-        axios.get("http://localhost:3001/api/dogs")
+        axios.get("/api/dogs")
         .then((dogs) => {
             dispatch({
                 type: FETCH_DOGS,
@@ -24,7 +24,7 @@ export function fetchDogs () {
 }
 export function fetchTemperaments () {
     return function ( dispatch ) {
-        axios.get("http://localhost:3001/api/temperaments")
+        axios.get("/api/temperaments")
         .then((temperaments) => {
             dispatch({
                 type: FETCH_TEMPERAMENTS,
@@ -38,7 +38,7 @@ export function fetchTemperaments () {
 }
 export function searchDogs (search) {
     return function ( dispatch ) {
-        axios.get("http://localhost:3001/api/dogs?name=" + search)
+        axios.get("/api/dogs?name=" + search)
         .then((dogs) => {
             dispatch ({
                 type: SEARCH_DOGS,
@@ -75,7 +75,7 @@ export function sortTemperament(temperament) {
 export function getDogDetails(id) {
     return async function (dispatch) {
         try {
-            var details = await axios.get("http://localhost:3001/api/dogs/" + id)
+            var details = await axios.get("api/dogs/" + id)
             return dispatch({
                 type: GET_DOG_DETAILS,
                 payload: details.data
@@ -95,8 +95,7 @@ export function clearDogDetails() {
 }
 export function createDog(dog) {
     return async function () {
-        const data = await axios.post("http://localhost:3001/api/dogs", dog)
-        console.log(dog)
+        const data = await axios.post("/api/dogs", dog)
         return data;
     }
 }
