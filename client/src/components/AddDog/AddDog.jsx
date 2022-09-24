@@ -61,7 +61,7 @@ function validate(dog) {
         errors.life_span = "Life-Span format should be like: 10 - 14 years"
     }
     if(!dog.image || !dog.image.includes("http") || dog.image.length < 6){
-        errors.image = "Image shoud be an url";
+        errors.image = "Image should be a png";
     }
     return errors
 }
