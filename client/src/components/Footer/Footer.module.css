@@ -1,6 +1,6 @@
 .Footer__Container{
     background-color: 
-    rgb(210, 188, 162);
+    #977c6b;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,15 +25,15 @@
 .Footer__Container .Social img:hover{
     height: 32px;
     width: 32px;
-    background-color: #C7AB97;
-    border: 1px solid #C7AB97;
+    background-color: #977c6b;
+    border: 1px solid #977c6b;
     margin: 5px 7px 5px 7px;
     border-radius: 5px;
 }
 
 .Footer__Container .Credits{
     align-items: center;
-    color: rgb(109, 95, 78);
+    color: beige;
     display: flex;
     font-size: 14px;
     font-weight: bold;

@@ -10,9 +10,8 @@ export default function OrderByWeight  () {
     }
     return (
     <>
-        <span className={styles.weight}>weight</span>
         <select name="select" onChange={onSelectChange} className={styles.selectWeight}>
-            <option value="Order by weight: " disabled> Order by weight: </option>
+            <option selected disabled>Weight: </option>
             <option value={MIN}>MIN</option>
             <option value={MAX}>MAX</option>
         </select>

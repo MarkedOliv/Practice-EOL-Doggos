@@ -9,3 +9,12 @@
     margin: auto;
     max-width: 1200px;
 }
+.home .Orders {
+    align-items: center;
+    color: beige;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 8px;
+    width: 100%;
+}

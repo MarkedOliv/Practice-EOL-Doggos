@@ -4,6 +4,9 @@ import { fetchDogs, fetchTemperaments } from "../../redux/actions";
 import Dog from "../Dog/Dog";
 import Pagination from "../Pagination/Pagination";
 import NavBar from "../NavBar/NavBar";
+import OrderByName from "../OrderByName/OrderByName";
+import OrderByTemperaments from "../OrderByTemperaments/OrderByTemperaments";
+import OrderByWeight from "../OrderByWeight/OrderByWeight";
 import Footer from "../Footer/Footer";
 import styles from "./Dogs.module.css";
 
@@ -12,7 +15,7 @@ export default function Dogs () {
     let dispatch = useDispatch();
     
     const [currentPage, setCurrentPage] = useState(1);
-    const dogsPerPage = 8;
+    const dogsPerPage = 9;
     const lastIndex = currentPage * dogsPerPage; 
     const firstIndex = lastIndex - dogsPerPage;
     const currentDogs = dogs.slice(firstIndex, lastIndex);    
@@ -26,8 +29,13 @@ export default function Dogs () {
     }, [dispatch])
     
     return (
-    <div className={styles.home}>
-        <NavBar setCurrentPage={setCurrentPage}/>        
+        <div className={styles.home}>
+        <NavBar/> 
+        <div className={styles.Orders}>
+            <OrderByName setCurrentPage={setCurrentPage}/>
+            <OrderByWeight setCurrentPage={setCurrentPage}/>
+            <OrderByTemperaments setCurrentPage={setCurrentPage}/>
+        </div>       
         <div className={styles.dogsContainer}>
             {
                 currentDogs.forEach(dog => {

@@ -17,10 +17,18 @@
     font-weight: bold;
     font-size: 17px;
     cursor: pointer;
+    padding: 2px;
+    transition: 0.4s ease;
 }
 
 .pagNum:hover {
     background-color: rgb(109, 95, 78);
     border: 1px solid beige;
     color: beige;
+}
+
+@media (max-width: 800px) {
+    .listContainer{
+        flex-wrap: wrap;
+    }
 }

@@ -16,9 +16,8 @@ export default function OrderByTemperaments ({ setCurrentPage }) {
     }
     return (
     <div>
-        <span className={styles.temp}>temperaments</span>
         <select name="select" onChange={onSelectChange} className={styles.selectTemp}>
-            <option value="Order by temperaments:" disabled>Order by temperaments:</option>
+            <option selected disabled>Temperaments: </option>
             <option value={ALL}>ALL</option>
             <option value="No-temperaments">No-temperaments</option>
             {

@@ -8,13 +8,13 @@
     height: auto;
     margin: auto;
     padding: 30px 50px 50px 50px;
-    width: 500px;
+    width: 30rem;
 }
 .formContainer {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 28rem;
 }
 .goBackBtn {
     background-color: beige;

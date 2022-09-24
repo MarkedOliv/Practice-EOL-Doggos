@@ -1,26 +1,34 @@
-.dogCard{
-    background-color: #c7ab97dc;
+.dogContainer{
+    background-color: #977C6B;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    height: 450px;
-    justify-content: space-between;
-    margin: 20px;
+    height: 26rem;
+    justify-content: space-evenly;
+    margin: 1rem;
     overflow: hidden;
     text-align: center;
     transition: all 0.25s;
-    width: 350px;
+    width: 21.8rem;
+}
+.dogCard{
+    display: flex;
+    flex-direction: column;
+    height: 26rem;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 21.8rem;
 }
 
-.dogCard:hover {
+.dogContainer:hover {
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
     transform: translateY(-15px);
 }
 
 .dogImg {
-    height: 220px;
-    width: 350px;
+    height: 13.75rem;
+    width: 21.8rem;
 }
 
 .dogName {
@@ -28,10 +36,10 @@
     border: none;
     color: beige;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 1.9rem;
     font-weight: bold;
-    margin-top: 8px;
-    text-shadow: -1px 0 rgb(109, 95, 78), 1px 0 rgb(109, 95, 78), 0 1px rgb(109, 95, 78), 0 -1px rgb(109, 95, 78);
+    margin-top: 0.3rem;
+    text-shadow: -1px 0 rgb(90, 77, 62), 1px 0 rgb(109, 95, 78), 0 1px rgb(109, 95, 78), 0 -1px rgb(109, 95, 78);
     text-decoration: none;
 }
 
@@ -71,3 +79,38 @@
     font-weight: 700;
     text-shadow: -1px 0 rgb(109, 95, 78), 1px 0 rgb(109, 95, 78), 0 1px rgb(109, 95, 78), 0 -1px rgb(109, 95, 78);
 }
+
+/* @media (max-width: 800px) {
+    .dogContainer{
+        height: 20rem;
+        overflow: hidden;
+        width: 19rem;
+    }
+    .dogImg {
+        height: 10rem;
+        width: 20rem;
+    }   
+    .dogName {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 0.3rem;
+    }
+    .dogCard{
+        height: 20rem;
+        width: 19rem;
+    }
+    .dogTempsEl {
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 1px;
+    }
+    .dogTempsElLarge {
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin: 1px;
+    }
+    .dogWeight {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+} */

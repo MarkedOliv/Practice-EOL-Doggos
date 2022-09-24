@@ -16,15 +16,12 @@ export default function SearchBar () {
 
   const handleOnChange = (e) => {
     setSearch(e.target.value);
-    dispatch(searchDogs(search));
     history.push("/dogs/page/1");
-  }
-  const handleOnSubmit = (e) => {
-    e.preventDefault();
+    dispatch(searchDogs(search));
   }
   return (
     <>
-      <form onSubmit={handleOnSubmit}>
+      <form>
         <input type="text" onChange={handleOnChange} value={search} className={styles.SearchBar} placeholder="Search..."/>
       </form>
     </>

@@ -97,3 +97,24 @@
 .utilContainer {
     display: flex;
 }
+
+@media (max-width: 800px) {
+    .dogTemperaments{
+        justify-content: center;
+        flex-wrap: wrap;
+        padding:10px;
+        width: 85%;
+    }
+    .dogHeightContainer {
+        font-weight: 700;
+        padding: 10px;
+    }
+    .dogWeightContainer {
+        font-weight: 700;
+        padding: 10px;
+    }
+    .dogLifeSpanContainer {
+        font-weight: 700;
+        padding: 10px;
+    }
+}

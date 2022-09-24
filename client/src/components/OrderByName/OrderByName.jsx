@@ -10,10 +10,9 @@ export default function OrderByName () {
     }
     return (
     <div>
-        <span className={styles.alpha}>alphabetical</span>
         <select name="select" 
         className={styles.selectName} onChange={onSelectChange}>
-            <option disabled value="Order by name: ">Order by name: </option>
+            <option disabled selected>Name: </option>
             <option value={ASCENDENTE}>A - Z</option>
             <option value={DESCENDENTE}>Z - A</option>
         </select>

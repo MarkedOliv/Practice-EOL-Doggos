@@ -3,13 +3,11 @@ import styles from "../LandingPage/LandingPage.module.css";
 
 export default function LandingPage () {
     return (
-    <div className={styles.LandingPageContainer}>
         <section className={styles.welcome}>
             <h1 className={styles.LandingTitle}>Welcome to Doggos</h1>
             <Link to="/dogs">
                 <button className={styles.goBtn}>Go</button>
             </Link>
         </section>
-    </div>
     )
 }

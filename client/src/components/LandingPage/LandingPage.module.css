@@ -1,39 +1,46 @@
 body {
-    background-image: url("../../assets/LandingPage.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../../assets/responsiveBg.jpg");
     background-attachment: fixed;
 }
-.LandingPageContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 .welcome {
-    align-items: center;
-    justify-content: center;
-    
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .LandingTitle {
     color: beige;
     font-size: 3.2rem;
-    text-shadow: -1px 0 #C7AB97, 2px 0 #C7AB97, 0 2px #C7AB97, 0 -1px #C7AB97;
+    text-shadow: -1px 0 #9d8778, 2px 0 #9d8778, 0 2px #9d8778, 0 -1px #9d8778;
 }
 .goBtn {
     background-color: beige;
-    border: 3px solid #C7AB97;
+    border: 3px solid #9d8778;
     border-radius: 10px;
-    color: #C7AB97;
+    color: #9d8778;
     cursor: pointer;
     font-size: 1.9rem;
+    margin-top: 15px;
     padding-left: 12px;
     padding-right: 12px;
 }
 
 .goBtn:hover {
-    background-color: #C7AB97;
+    background-color: #9d8778;
     color: beige;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+@media (max-width: 800px) {
+    .goBtn {
+        background-color: beige;
+        border: 3px solid #9d8778;
+        border-radius: 10px;
+        color: #9d8778;
+        cursor: pointer;
+        font-size: 2.2rem;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
