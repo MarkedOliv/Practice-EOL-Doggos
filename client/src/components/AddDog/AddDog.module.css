@@ -96,10 +96,10 @@
 @media (max-width: 800px) {
     .container {
         padding: 18px 38px 38px 38px;
-        width: 26rem;
+        width: 18.75rem;
     }
     .formContainer {
-        width: 23rem;
+        width: 18.75rem;
     }
     .goBackBtn {
         font-size: 1rem;
