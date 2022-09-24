@@ -80,18 +80,18 @@
     text-shadow: -1px 0 rgb(109, 95, 78), 1px 0 rgb(109, 95, 78), 0 1px rgb(109, 95, 78), 0 -1px rgb(109, 95, 78);
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
     .dogContainer{
-        height: 20rem;
+        height: 23rem;
         overflow: hidden;
-        width: 19rem;
+        width: 20rem;
     }
     .dogImg {
-        height: 10rem;
-        width: 20rem;
+        height: 13rem;
+        width: 21rem;
     }   
     .dogName {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: bold;
         margin-top: 0.3rem;
     }
@@ -113,4 +113,4 @@
         font-size: 1rem;
         font-weight: 700;
     }
-} */
+}

@@ -92,3 +92,38 @@
     font-size: 14px;
     color: rgb(247, 47, 87);
 }
+
+@media (max-width: 800px) {
+    .container {
+        padding: 18px 38px 38px 38px;
+        width: 26rem;
+    }
+    .formContainer {
+        width: 23rem;
+    }
+    .goBackBtn {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+    .labelInput {
+        font-size: 0.9rem;
+    }
+    .controlsInputT {
+        font-size: 0.9rem;
+        padding: 3px;
+    }
+    .toSelectT {
+        font-size: 0.9rem;
+    }
+    .tempSelectedEl {
+        margin: 3px;
+        padding: 4px;
+    }
+    .submitBtn {
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    .errorsP {
+        font-size: 0.7rem;
+    }
+}
