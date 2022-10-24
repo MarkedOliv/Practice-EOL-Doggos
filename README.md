@@ -1,20 +1,31 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
 # Individual Project - Henry Dogs
 
 <img height="200" src="./dog.png" />
 
-## Objetivos del Proyecto
+## Project Objectives
 
-- Construir una App utlizando React, Redux, Node y Sequelize.
-- Afirmar y conectar los conceptos aprendidos en la carrera.
-- Aprender mejores prácticas.
-- Aprender y practicar el workflow de GIT.
-- Usar y practicar testing.
-## Enunciado
+- Made an app using React, Redux, Node y Sequelize.
+- Certified the technologies you learned in the bootcamp.
+- Learn good practices.
+- Learn and practice GIT flow.
+## Statement
 
-a idea general es crear una aplicación en la cual se puedan ver distintas razas de perro junto con información relevante de las mismas utilizando la api externa [the dog api](https://thedogapi.com/) y a partir de ella poder, entre otras cosas:
+The general idea is to create an application in which different breeds of dog can be seen together with relevant information about them using the external api [the dog api](https://thedogapi.com/) and from there, to be able, among other things:
 
-- Buscar perros
-- Filtrarlos / Ordenarlos
-- Agregar nuevos perros
+- Search Dog Breeds
+- Filter / Sort
+- Add New Dogs
+
+## Show project local
+
+- Clone github repo
+- Open a terminal/cmd in the api folder
+- Run npm install
+- Open a terminal/cmd in the client folder
+- Run npm install
+- You're going to need a file in the src folder called ".env"
+- To start the api local you need some credentials from postgres
+- Like DB_USER=YourPostgresUser,DB_PASSWORD=YourPostgresPassword, DB_HOST=localhost, DB_NAME=YourDBName
+- after you got that you can use npm start in the api folder & npm start in the client folder
+- Now you can see the app in your localhost
