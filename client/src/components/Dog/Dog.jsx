@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import styles from "./Dog.module.css"
 
 export default function Dog ({ id, image, name, temperaments, weight }) {
+    let history = useHistory();
     return (
-    <div className={styles.dogContainer}>
-        <Link to={"/dogs/" + id}>
+    <div className={styles.dogContainer} onClick={() => history.push('/dogs/' + id)}>        
             <img className={styles.dogImg} src={image} alt={name} />
             <button className={styles.dogName}>{name}</button>
         <div className={styles.dogCard}>
@@ -23,6 +23,5 @@ export default function Dog ({ id, image, name, temperaments, weight }) {
             </div>
 
         </div>
-        </Link>
     </div>)
 }
