@@ -7,7 +7,6 @@ export default function Dog ({ id, image, name, temperaments, weight }) {
         <Link to={"/dogs/" + id}>
             <img className={styles.dogImg} src={image} alt={name} />
             <button className={styles.dogName}>{name}</button>
-        </Link>
         <div className={styles.dogCard}>
             <ul className={styles.dogTemps}>
             {
@@ -24,5 +23,6 @@ export default function Dog ({ id, image, name, temperaments, weight }) {
             </div>
 
         </div>
+        </Link>
     </div>)
 }
