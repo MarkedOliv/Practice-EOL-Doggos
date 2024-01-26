@@ -11,6 +11,8 @@ const processDogData = (dog) => {
   const heightArray = dog.height.metric ? dog.height.metric.split(" - ") : [];
   const weightArray = dog.weight.metric ? dog.weight.metric.split(" - ") : [];
 
+  const img = dog.image.url ? dog.image.url : null;
+
   return {
     id: dog.id,
     name: dog.name,
@@ -18,7 +20,7 @@ const processDogData = (dog) => {
     weight: weightArray,
     temperaments: temperamentArray,
     life_span: dog.life_span,
-    image: dog.image.url,
+    image: img,
   };
 };
 
