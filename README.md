@@ -1,4 +1,4 @@
-#Este proyecto está abandonado y ya no se le dará mantenimiento por el cambio de api. Si estás interesado en continuar el desarrollo, eres libre de hacer un fork del repositorio.
+# Este proyecto está abandonado y ya no se le dará mantenimiento por el cambio de api. Si estás interesado en continuar el desarrollo, eres libre de hacer un fork del repositorio.
 
 # Individual Project - Henry Dogs
 
